@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`todoBoard should display todos should have 1 todo displayed 1`] = `
+<div>
+  <div>
+    <p>
+      props.todo
+      <input
+        type="checkbox"
+      />
+    </p>
+  </div>
+</div>
+`;
