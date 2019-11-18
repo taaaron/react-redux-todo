@@ -1,19 +1,72 @@
 import TodoAction from "../../model/todoAction";
-import {ADD_TODO, DELETE_TODO, EDIT_TODO, NULL_TYPE} from "../types"
+import {GET_TODOS, ADD_TODO, DELETE_TODO, EDIT_TODO, NULL_TYPE} from "../types"
 import Todo from "../../model/todo";
 
 export const createAddTodoAction = (text) => {
-    if(!text){
-        return new TodoAction(NULL_TYPE);
-    }else {
-        return new TodoAction(ADD_TODO, new Todo(text));
-    }
+    return (dispatch) => {
+        const todo = new Todo(text);
+        fetch(
+                'http://localhost:8080/todo/',
+                {
+                    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+                    mode: 'cors', // no-cors, *cors, same-origin
+                    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+                    headers: {
+                        'Content-Type': 'application/json'
+                        // 'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: JSON.stringify(todo) // body data type must match "Content-Type" header
+                }
+            )
+            .then((response) => {
+                return response.json();
+            })
+            .then((response) => {
+                console.log(response.json())
+                dispatch({type: ADD_TODO, todo: response});
+            })
+            .catch(error => console.log(`error! ${error}`));
+    };
 }
 
 export const createEditTodoAction = (prevTodo, newTodo) => {
     return new TodoAction(EDIT_TODO, prevTodo, newTodo);
 }
 
-export const createDeleteTodoAction = (todo) => {
-    return new TodoAction(DELETE_TODO, todo);
+export const createDeleteTodoAction = (id) => {
+    return (dispatch) => {
+        fetch(
+            `http://localhost:8080/todo/${id}`,
+            {
+                method: 'DELETE', // *GET, POST, PUT, DELETE, etc.
+                mode: 'cors', // no-cors, *cors, same-origin
+                cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+                headers: {
+                    'Content-Type': 'application/json'
+                    // 'Content-Type': 'application/x-www-form-urlencoded',
+                }
+            }
+        )
+            .then((response) => {
+                console.log(response)
+                dispatch({type: DELETE_TODO, todo: response});
+                dispatch(getAllTodos()); //THIS WORKS!!! :D
+            })
+
+            .catch(error => console.log(`error! ${error}`));
+    };
+}
+
+export const getAllTodos = () => {
+    return (dispatch) => {
+        fetch('http://localhost:8080/todo/')
+            .then((response) => {
+                return response.json();
+            })
+            .then((response) => {
+                console.log(response);
+                dispatch({type: GET_TODOS, todo: response}); //CAN ONLY PASS PURE OBJECTS FOR FINAL DISPATCH
+            })
+            .catch(error => console.log(`error! ${error}`));
+    };
 }

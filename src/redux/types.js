@@ -2,6 +2,7 @@
 export const ADD_TODO = Symbol('ADD_TODO');
 export const DELETE_TODO = Symbol('DELETE_TODO');
 export const EDIT_TODO = Symbol('EDIT_TODO');
+export const GET_TODOS = Symbol('GET_TODOS');
 
 //null type
 export const NULL_TYPE = Symbol('NULL_TYPE');
