@@ -2,14 +2,26 @@ import {createAddTodoAction, createEditTodoAction, createDeleteTodoAction } from
 import {ADD_TODO, DELETE_TODO, EDIT_TODO, NULL_TYPE} from '../../redux/types';
 import TodoAction from '../../model/todoAction';
 import Todo from '../../model/todo';
+import utils from '../../utils';
 
 describe('todo action tests', ()=> {
 
-    it('todo action create add todo given text',()=> {
+    it('todo action create add todo given text',(done)=> {
+        const dispatchMock = jest.fn(()=>{});
         const text = 'go to the store';
         const todoModel = new Todo(text);
         const expected = new TodoAction(ADD_TODO,todoModel );
-        expect(createAddTodoAction(text)).toEqual(expected);
+
+        utils.apiCall.mockResolvedValueOnce(todoModel);
+
+        createAddTodoAction(text)(dispatchMock);
+
+        setImmediate(() => {
+            expect(dispatchMock.mock.calls.length).toBe(1);
+            expect(dispatchMock.mock.calls[0][0]).toEqual(expected);
+            done();
+        });
+
     });
 
     it('todo action create add todo should not add todo if null text', ()=> {

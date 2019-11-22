@@ -11,7 +11,5 @@ export const visibilityReducer =(state = TOGGLE_OPTIONS.ALL, action)=>{
             return state;
 
     }
-
-
 }
 

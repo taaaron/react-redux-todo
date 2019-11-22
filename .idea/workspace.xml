@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02eb9868-b746-4489-afae-b1ed02110ac7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/__mocks__/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TodoBoard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoBoard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/todo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/todoAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/todoAction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/action/todoActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/action/todoActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/combineReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/combineReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/todoReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/todoReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/visibilityReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/visibilityReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/redux/todoAction.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/redux/todoAction.test.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,31 +137,63 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1154060670">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="ESLintLanguageService" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="js" value="11" />
+          <entry key="jsx" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JSX Harmony" value="2" />
+          <entry key="JavaScript" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="js" value="613" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JavaScript" value="613" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/App.js">
+            <entry file="file://$PROJECT_DIR$/src/components/TodoBoard.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+                <state relative-caret-position="315">
+                  <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
                   <folding>
-                    <element signature="e#0#41#0" expanded="true" />
+                    <element signature="e#0#26#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/components/todoBoard.test.jsx">
+            <entry file="file://$PROJECT_DIR$/src/model/todoAction.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-                  <folding>
-                    <element signature="e#0#38#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="15">
+                  <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
                 </state>
               </provider>
             </entry>
@@ -178,11 +210,20 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/redux/types.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="15">
+                  <caret line="1" column="43" lean-forward="true" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/redux/action/todoActions.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="356">
-                  <caret line="67" column="108" selection-start-line="67" selection-start-column="108" selection-end-line="67" selection-end-column="108" />
+                <state relative-caret-position="160">
+                  <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
                   <folding>
                     <element signature="e#0#48#0" expanded="true" />
                   </folding>
@@ -191,22 +232,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/model/todoAction.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" selection-start-line="11" selection-end-line="11" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/redux/reducers/todoReducer.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-                  <folding>
-                    <element signature="e#0#58#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="210">
+                  <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
                 </state>
               </provider>
             </entry>
@@ -214,8 +243,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/redux/reducers/visibilityReducer.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+                <state relative-caret-position="225">
+                  <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
                 </state>
               </provider>
             </entry>
@@ -225,40 +254,43 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/components/TodoBoard.jsx">
+            <entry file="file://$PROJECT_DIR$/src/test/redux/todoAction.test.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="268">
-                  <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+                <state relative-caret-position="315">
+                  <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
                   <folding>
-                    <element signature="e#0#26#0" expanded="true" />
+                    <element signature="e#0#114#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/model/todo.js">
+            <entry file="file://$PROJECT_DIR$/src/__mocks__/utils.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+                <state>
+                  <caret column="58" selection-start-column="58" selection-end-column="58" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/redux/todoReducer.test.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="23" selection-start-line="23" selection-end-line="23" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/redux/types.js">
+            <entry file="file://$PROJECT_DIR$/src/setupTests.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="75">
-                  <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+                  <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="24" />
+                  <folding>
+                    <element signature="e#0#28#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/utils.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="16" column="23" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -266,20 +298,11 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/redux/combineReducer.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="84" lean-forward="true" selection-start-line="10" selection-start-column="84" selection-end-line="10" selection-end-column="84" />
+                <state relative-caret-position="180">
+                  <caret line="12" column="65" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
                   <folding>
                     <element signature="e#0#68#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/redux/visibilityReducer.test.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="26" selection-start-column="26" selection-end-column="26" />
                 </state>
               </provider>
             </entry>
@@ -313,21 +336,23 @@
         <option value="$PROJECT_DIR$/src/redux/visibilityReducer.js" />
         <option value="$PROJECT_DIR$/src/test/redux/todoReducer.test.js" />
         <option value="$PROJECT_DIR$/src/model/editTodoAction.js" />
-        <option value="$PROJECT_DIR$/src/model/todoAction.js" />
-        <option value="$PROJECT_DIR$/src/test/redux/todoAction.test.js" />
-        <option value="$PROJECT_DIR$/src/redux/reducers/visibilityReducer.js" />
         <option value="$PROJECT_DIR$/src/test/components/todoBoard.jsx" />
-        <option value="$PROJECT_DIR$/src/setupTests.js" />
         <option value="$PROJECT_DIR$/src/test/redux/visibilityReducer.test.js" />
         <option value="$PROJECT_DIR$/src/test/components/todoBoard.test.jsx" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/model/todo.js" />
-        <option value="$PROJECT_DIR$/src/redux/combineReducer.js" />
         <option value="$PROJECT_DIR$/src/redux/types.js" />
         <option value="$PROJECT_DIR$/src/redux/reducers/todoReducer.js" />
         <option value="$PROJECT_DIR$/src/components/Todo.jsx" />
         <option value="$PROJECT_DIR$/src/components/TodoBoard.jsx" />
+        <option value="$PROJECT_DIR$/src/model/todo.js" />
+        <option value="$PROJECT_DIR$/src/model/todoAction.js" />
+        <option value="$PROJECT_DIR$/src/redux/reducers/visibilityReducer.js" />
+        <option value="$PROJECT_DIR$/src/redux/combineReducer.js" />
+        <option value="$PROJECT_DIR$/src/setupTests.js" />
+        <option value="$PROJECT_DIR$/src/utils.js" />
+        <option value="$PROJECT_DIR$/src/__mocks__/utils.js" />
         <option value="$PROJECT_DIR$/src/redux/action/todoActions.js" />
+        <option value="$PROJECT_DIR$/src/test/redux/todoAction.test.js" />
       </list>
     </option>
   </component>
@@ -355,7 +380,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -367,6 +393,12 @@
               <item name="react-redux-todo" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-redux-todo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-redux-todo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-redux-todo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="__mocks__" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-redux-todo" type="b2602c69:ProjectViewProjectNode" />
@@ -424,25 +456,29 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/plo3630/Documents/codebase/react-redux-todo/src/redux/combineReducer.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574113412205" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574442343389" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/__mocks__" />
+      <recent name="$PROJECT_DIR$/src/__mock__" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/redux/reducers" />
       <recent name="$PROJECT_DIR$/src" />
@@ -462,6 +498,26 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="todo action tests.todo action create add todo given text" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/test/redux/todoAction.test.js" />
+      <test-names>
+        <test-name value="todo action tests" />
+        <test-name value="todo action create add todo given text" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.todo action tests.todo action create add todo given text" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -478,17 +534,44 @@
       <workItem from="1574099414682" duration="2448000" />
       <workItem from="1574102423186" duration="600000" />
       <workItem from="1574105495214" duration="5430000" />
+      <workItem from="1574436245214" duration="5058000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="todo_action_tests_todo_action_create_add_todo_given_text - 2019.11.22 at 10h 35m 29s.xml">
+      <configuration name="todo action tests.todo action create add todo given text" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="todo_action_tests_todo_action_create_add_todo_given_text - 2019.11.22 at 10h 37m 43s.xml">
+      <configuration name="todo action tests.todo action create add todo given text" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="todo_action_tests_todo_action_create_add_todo_given_text - 2019.11.22 at 10h 37m 56s.xml">
+      <configuration name="todo action tests.todo action create add todo given text" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="todo_action_tests_todo_action_create_add_todo_given_text - 2019.11.22 at 10h 40m 20s.xml">
+      <configuration name="todo action tests.todo action create add todo given text" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="todo_action_tests_todo_action_create_add_todo_given_text - 2019.11.22 at 10h 40m 34s.xml">
+      <configuration name="todo action tests.todo action create add todo given text" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="todo_action_tests_todo_action_create_add_todo_given_text - 2019.11.22 at 10h 42m 08s.xml">
+      <configuration name="todo action tests.todo action create add todo given text" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="todo_action_tests_todo_action_create_add_todo_given_text - 2019.11.22 at 10h 43m 58s.xml">
+      <configuration name="todo action tests.todo action create add todo given text" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="todo_action_tests_todo_action_create_add_todo_given_text - 2019.11.22 at 10h 47m 05s.xml">
+      <configuration name="todo action tests.todo action create add todo given text" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26524000" />
+    <option name="totallyTimeSpent" value="31582000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19009584" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19169329" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -497,13 +580,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32881355" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3299435" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.36497176" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.36497176" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3299435" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -578,13 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/setupTests.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -605,13 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/reducers/visibilityReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/redux/todoReducer.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -628,45 +697,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/todo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/redux/todoAction.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#114#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/types.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/combineReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="84" lean-forward="true" selection-start-line="10" selection-start-column="84" selection-end-line="10" selection-end-column="84" />
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/redux/reducers/todoReducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/reducers/visibilityReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -682,8 +728,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/TodoBoard.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="315">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -692,17 +738,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/todoAction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/types.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="43" lean-forward="true" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__mock__/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__mocks__/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="58" selection-start-column="58" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/setupTests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/combineReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="65" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/redux/action/todoActions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="67" column="108" selection-start-line="67" selection-start-column="108" selection-end-line="67" selection-end-column="108" />
+        <state relative-caret-position="160">
+          <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/redux/todoAction.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#114#0" expanded="true" />
           </folding>
         </state>
       </provider>

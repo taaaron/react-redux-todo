@@ -8,6 +8,7 @@ export default class todoAction {
          else {
              this.todo = {prevState: todo, editState: newTodo}
          }
-    }
 
+         return {...this};
+    }
 }

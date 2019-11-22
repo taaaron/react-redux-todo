@@ -14,6 +14,6 @@ export default class Todo {
         this.categories = categories;
         this.priority = priority;
 
-        return this;
+        return {...this};
     }
 }

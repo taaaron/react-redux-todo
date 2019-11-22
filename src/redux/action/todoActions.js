@@ -1,28 +1,13 @@
 import TodoAction from "../../model/todoAction";
 import {GET_TODOS, ADD_TODO, DELETE_TODO, EDIT_TODO, NULL_TYPE} from "../types"
 import Todo from "../../model/todo";
+import {apiCall} from "../../utils";
 
 export const createAddTodoAction = (text) => {
     return (dispatch) => {
         const todo = new Todo(text);
-        fetch(
-                'http://localhost:8080/todo/',
-                {
-                    method: 'POST', // *GET, POST, PUT, DELETE, etc.
-                    mode: 'cors', // no-cors, *cors, same-origin
-                    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-                    headers: {
-                        'Content-Type': 'application/json'
-                        // 'Content-Type': 'application/x-www-form-urlencoded',
-                    },
-                    body: JSON.stringify(todo) // body data type must match "Content-Type" header
-                }
-            )
+        apiCall('POST', 'http://localhost:8080/todo/', todo)
             .then((response) => {
-                return response.json();
-            })
-            .then((response) => {
-                console.log(response.json())
                 dispatch({type: ADD_TODO, todo: response});
             })
             .catch(error => console.log(`error! ${error}`));
